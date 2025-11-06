@@ -1,0 +1,29 @@
+class car{
+    string brand;
+    int price;
+    public:
+   car(string b,int p){
+        brand= b;
+        price=p;
+    }
+   
+       
+    void display(){
+        cout<< "car brand  "<<brand<<endl;
+       
+        cout<< "car price Rs : "<<price<<endl;
+   
+    }
+};
+
+int main()
+{
+
+ car c1("volkswagen",10000000);
+ car c2("mustang",20000000);
+ 
+ c1.display();
+ c2.display();
+
+    return 0;
+}
