@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class box{
+    int length;
+    int bredth;
+    int height;
+    public:
+    box(){
+      length=1;
+      bredth=1;
+      height=1;
+    }
+    box(int l){
+       length=l;
+       bredth=1;
+       height=1;
+    }
+   
+    box(int l,int b,int h){
+        length= l;
+        bredth=b;
+        height=h;
+    }
+   
+       
+    void volume(){
+        cout<<"length of this box is :"<<length<<endl;
+        cout<<"bredth of this box is :"<<bredth<<endl;
+        cout<<"height of this box is :"<<height<<endl;
+        cout<<"volume of the box is :"<<length*bredth*height<<endl<<endl;
+
+   
+    }
+};
+
+int main()
+{
+
+ box b1;
+ box b2(4);
+ box b3(2,3,4);
+ 
+ 
+ b1.volume();
+ b2.volume();
+ b3.volume();
+    return 0;
+}
+
